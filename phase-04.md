@@ -2,7 +2,7 @@
 
 ## Goal
 
-Add a function to `library.py` that reads video URLs from a CSV file.
+Add a function to `solutions/library.py` that reads video URLs from a CSV file.
 
 ## Data file
 
@@ -26,10 +26,10 @@ Columns:
 
 ## Steps
 
-1. In `library.py`, create a function that reads the CSV file.
+1. In `solutions/library.py`, create a function that reads the CSV file.
 2. Use Python's built-in `csv` module.
 3. Return the URLs from the `url` column.
-4. Import the CSV-reading function into `main.py`.
+4. Import the CSV-reading function into `solutions/main.py`.
 5. Print the list of URLs to check that it works.
 
 ## Recreate this as a function
@@ -46,22 +46,22 @@ with open("data/video_urls.csv", newline="") as file:
         print(row["title"], row["url"])
 ```
 
-The CSV reader should live in `library.py`, not directly in `main.py`.
+The CSV reader should live in `solutions/library.py`, not directly in `solutions/main.py`.
 
-## Import it in `main.py`
+## Import it in `solutions/main.py`
 
-Your `main.py` should import the CSV-reading function from `library.py`. **Print the list of URLs to check that it works.**
+Your `solutions/main.py` should import the CSV-reading function from `solutions/library.py`. **Print the list of URLs to check that it works.**
 
 ## Checkpoint
 
 Run:
 
 ```bash
-python main.py
+python solutions/main.py
 ```
 
 Confirm that:
 
 - The app reads from `data/video_urls.csv`.
 - The app prints a Python list of video URLs.
-- The CSV-reading code lives in `library.py`.
+- The CSV-reading code lives in `solutions/library.py`.

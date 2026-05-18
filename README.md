@@ -64,16 +64,20 @@ bda-capstone-1/
 │   └── how-to-fork.png
 ├── data/
 │   └── video_urls.csv
+├── solutions/
+│   └── README.md
 └── reports/
     └── .gitkeep
 ```
 
 Students will create these files and folders during the phases:
 
-- `main.py`
-- `library.py`
+- `solutions/main.py`
+- `solutions/library.py`
 - `videos/`
 - `data/video_metadata.csv`
+
+The `solutions/` folder is where students should place their Python solution files.
 
 ## Important notes
 

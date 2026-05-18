@@ -6,7 +6,7 @@ Create the smallest working version of the app: download one video using `yt-dlp
 
 ## Steps
 
-1. Create a new file called `main.py`.
+1. Create a new file called `solutions/main.py`.
 2. Add the simple download code below.
 3. Run the script and examine the output.
 
@@ -32,7 +32,7 @@ with yt_dlp.YoutubeDL(ydl_options) as ydl:
 Run:
 
 ```bash
-python main.py
+python solutions/main.py
 ```
 
 Confirm that:

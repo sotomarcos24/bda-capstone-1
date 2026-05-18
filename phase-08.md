@@ -19,7 +19,7 @@ The final dataset should include:
 
 ## Steps
 
-1. Create a new function in `library.py` for extracting video metadata.
+1. Create a new function in `solutions/library.py` for extracting video metadata.
 2. Call this function when each individual download is triggered.
 3. Store the metadata in a list of dictionaries.
 4. After all downloads finish, create a new CSV file from that data structure.
@@ -55,7 +55,7 @@ with yt_dlp.YoutubeDL(ydl_options) as ydl:
 
 ## Recreate this as a function
 
-The metadata logic should live in `library.py`, not directly in `main.py`.
+The metadata logic should live in `solutions/library.py`, not directly in `solutions/main.py`.
 
 Suggested function name:
 
@@ -116,12 +116,12 @@ data/video_metadata.csv
 Run:
 
 ```bash
-python main.py
+python solutions/main.py
 ```
 
 Confirm that:
 
-- The metadata extraction function lives in `library.py`.
+- The metadata extraction function lives in `solutions/library.py`.
 - The function is called when each individual download is triggered.
 - The app creates `data/video_metadata.csv`.
 - The new CSV contains `title`, `duration`, `uploader`, `view_count`, `ext`, and `url`.

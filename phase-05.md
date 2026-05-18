@@ -6,7 +6,7 @@ Use the CSV reader from Phase 04 to download all videos one by one and save a si
 
 ## Steps
 
-1. Import the CSV-reading function from `library.py`.
+1. Import the CSV-reading function from `solutions/library.py`.
 2. Read the URLs from `data/video_urls.csv`.
 3. Download each video one by one.
 4. Measure the time for each download.
@@ -16,7 +16,7 @@ Use the CSV reader from Phase 04 to download all videos one by one and save a si
 
 ## Use the CSV reader
 
-Your `main.py` should use the function you created in Phase 04:
+Your `solutions/main.py` should use the function you created in Phase 04:
 
 ```python
 import ...
@@ -95,12 +95,12 @@ Space complexity:
 Run:
 
 ```bash
-python main.py
+python solutions/main.py
 ```
 
 Confirm that:
 
-- The app reads URLs using the function from `library.py`.
+- The app reads URLs using the function from `solutions/library.py`.
 - Videos download one by one. Check the `videos/` folder.
 - A report appears in `reports/sequential_report.md`.
 - The report includes a short time and space complexity note.

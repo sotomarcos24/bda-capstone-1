@@ -7,7 +7,7 @@ Use `multiprocessing.Pool` to download the same videos in parallel, then compare
 ## Steps
 
 1. Keep the serial version from Phase 05.
-2. In `main.py`, comment out the serial download execution so it does not run again.
+2. In `solutions/main.py`, comment out the serial download execution so it does not run again.
 3. Add a parallel version using `multiprocessing.Pool`.
 4. Download the same videos in parallel.
 5. Measure the total parallel execution time.
@@ -18,7 +18,7 @@ Use `multiprocessing.Pool` to download the same videos in parallel, then compare
 
 Do not run the serial downloads again in this phase.
 
-In `main.py`, comment out the part that runs the serial download loop. Keep the code in the file, but prevent it from executing while you test the parallel version.
+In `solutions/main.py`, comment out the part that runs the serial download loop. Keep the code in the file, but prevent it from executing while you test the parallel version.
 
 ## Parallel pattern
 

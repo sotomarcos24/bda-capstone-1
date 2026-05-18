@@ -16,7 +16,7 @@ Your app should handle these problems and keep going.
 
 ## Steps
 
-1. Add simple error handling to the download function in `library.py`.
+1. Add simple error handling to the download function in `solutions/library.py`.
 2. Add a timeout to the `yt-dlp` options.
 3. Return a result dictionary for each download.
 4. Record whether each download succeeded or failed.
@@ -103,7 +103,7 @@ If any videos failed, include the URL and the error message.
 Run:
 
 ```bash
-python main.py
+python solutions/main.py
 ```
 
 Confirm that:
