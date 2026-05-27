@@ -7,7 +7,6 @@ def download_video(url):
         "outtmpl": "videos/%(title)s.%(ext)s",
         "socket_timeout": 30,
     }
-
     try:
         with yt_dlp.YoutubeDL(ydl_options) as ydl:
             ydl.download([url])
@@ -24,6 +23,30 @@ def download_video(url):
             "status": "failed",
             "error": str(error),
         }
+        
+def download_video_semaphore(url, semaphore):
+    ydl_options = {
+        "outtmpl": "videos/%(title)s.%(ext)s",
+        "socket_timeout": 30,
+    }
+
+    with semaphore:
+        try:
+            with yt_dlp.YoutubeDL(ydl_options) as ydl:
+                ydl.download([url])
+
+            return {
+                "url": url,
+                "status": "success",
+                "error": "",
+            }
+
+        except Exception as error:
+            return {
+                "url": url,
+                "status": "failed",
+                "error": str(error),
+            }
 
 def read_video_urls(csv_path):
     urls = []

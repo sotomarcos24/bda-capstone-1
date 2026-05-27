@@ -3,7 +3,6 @@ import time
 from multiprocessing import Pool
 import csv
 
-
 if __name__ == "__main__":
 
     urls = read_video_urls("data/video_urls.csv")
